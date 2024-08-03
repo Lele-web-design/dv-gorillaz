@@ -1,0 +1,388 @@
+html { scroll-behavior: smooth; }
+
+* {
+    box-sizing: border-box;
+    scroll-margin-top: 84px;
+}
+
+body {
+    margin: 0px;
+    background-color: #000e1f;
+    color: #FFF;
+    font-size: 1.25rem;
+    line-height: 1.6em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenedor-principal {
+    width: 480px;
+    padding-top: 85px;
+}
+
+.none {
+    display: none;
+}
+
+.fondo-blanco {
+    background-color: #FFF;
+    color: #242424;
+}
+
+.lista-redes-sociales {
+    margin: 0px;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.centrado, img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #00C6EC;
+
+    &:hover { color: #00a6c7; }
+}
+
+figure {
+    margin: 0px;
+}
+
+.header-pcpal {
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 85px;
+}
+
+.nav-pcpal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    height: 85px;
+}
+
+.nav-list__link, .nav-pcpal__link {
+    text-decoration: none;
+    color: #242424;
+    margin: 0px;
+
+    &hover {
+        color: #4b4b4b;
+    }
+}
+
+#menuDeNavegacion {
+    display: none;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 6;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.606);
+}
+
+#menuDeNavegacion:target{
+    display: flex;
+}
+
+#menuDeNavegacion > div {
+    background-color: #000e1f;
+    padding: 1.5rem;
+    height: 100vh;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.nav-pcpal__boton-menu {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    font-size: 0px;
+}
+
+.nav-pcpal__boton-menu--abrir {
+    background-image: url("../img/iconos/menu.png");
+    margin-right: 1.5rem;
+}
+
+.nav-pcpal__boton-menu--cerrar {
+    background-image: url("../img/iconos/cerrar.png");
+    background-position-y: bottom;
+}
+.nav-pcpal__link, .nav-list__link {
+    color: white;
+}
+.nav-pcpal__link {
+    display: block;
+    padding: 0.5em 1em 0.5em 1.96em;
+}
+
+.nav-pcpal__link:hover {
+    padding-left: 1em;
+}
+
+.nav-pcpal__link:hover::before {
+    content: '> ';
+}
+.nav-list__link--subrayado, .nav-list__link--resaltado {
+    border-bottom: 3px solid #FFF;
+}
+
+.nav-pcpal__logo {
+    width: 147px;
+    height: 40px;
+    background: #FFF url("../img/logo.png") center center no-repeat;
+    font-size: 0px;
+    display: block;
+}
+
+.banner {
+    height: calc(100vh - 85px);
+    padding-top: 50px;
+}
+
+.lista-redes-sociales {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista-redes-sociales__link {
+    display: block;
+    font-size: 0px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/iconos/redes_sociales.png");
+    background-repeat: no-repeat;
+}
+
+#rrssX { background-position: -0px 0px; }
+
+#rrssInstagram { background-position: -40px 0px; }
+
+#rrssYoutube{ background-position: -80px 0px; }
+
+#rrssTikTok{ background-position: -120px 0px; }
+
+#rrssDiscord{ background-position: -160px 0px; }
+
+#rrssFacebook{ background-position: -200px 0px; }
+
+#rrssSnapchat{ background-position: -240px 0px; }
+
+#rrssX:hover, #rrssInstagram:hover, #rrssYoutube:hover, #rrssTikTok:hover, #rrssDiscord:hover, #rrssFacebook:hover, #rrssSnapchat:hover {
+    background-position-y: -40px ;
+}
+.galeria {
+    display: none;
+}
+
+.scroll-btn {
+    display: block;
+    border-radius: 50%;
+    font-size: 0px;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:hover {
+        background-color: rgba(234, 234, 0, 0.811);
+    }
+}
+
+.scroll-btn--bajar {
+    background-image: url("../img/iconos/flecha_para_abajo_con_palo.png");
+    margin-top: 30px;
+}
+
+.scroll-btn--subir {
+    background-image: url("../img/iconos/flecha_para_arriba_con_palo.png");
+    margin-top: 20px;
+}
+
+.contenedor-txt {
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+
+.contenedor-txt--transparente {
+    background-color: rgba(20, 20, 20, 0.75);
+}
+
+iframe {
+    margin: 20px 0px;
+    width: 340px;
+    height: 199px;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+footer > p {
+    font-size: 0.85em;
+    text-align: center;
+    margin: 0px 8%;
+    padding: 5px 0px;
+    border-top: 2px solid #242424
+}
+
+@media screen and (min-width:800px) {
+    .contenedor-principal {
+        width: 800px;
+    }
+
+    iframe {
+        width: 600px;
+        height: 351px;
+    }
+
+    .lista-redes-sociales {
+        justify-content: flex-end;
+        margin-right: 80px;
+    }
+
+    .galeria {
+        display: block;
+        height: 397px;
+    }
+
+    .lista-redes-sociales__link {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .contenedor-principal {
+        width: 1280px;
+    }
+
+    .nav-pcpal__boton-menu {
+        display: none;
+    }
+    #menuDeNavegacion {
+        background-color: rgba(0, 0, 0, 0);
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    #menuDeNavegacion > div {
+        background-color: rgba(0, 0, 0, 0);
+        height: 85px;
+        color: #242424;
+        width: auto;
+        height: auto;
+        padding: 0px;
+    }
+
+    .nav-list {
+        margin: 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-pcpal__link, .nav-list__link {
+        color: #242424;
+    }
+    .nav-list__item {
+        margin-left: 40px;
+    }
+
+    .nav-list__link--subrayado {
+        border-bottom: 3px solid #242424;
+    }
+
+    .nav-list__link--resaltado {
+        outline: 3px solid black;
+        border: none;
+    }
+
+    .nav-list__item--menu-desplegable {
+        position: relative;
+        padding-right: 20px;
+        background: white url("../img/iconos/flecha_para_abajo_simple.png") right 0.77em no-repeat;
+    }
+
+    .nav-pcpal__lista-anclas {
+        display: none;
+        position: absolute;
+        padding-left: 0px;
+        top: 1.57em;
+        right: -15px;
+        width: 10em;
+        padding-top: 25px;
+    }
+
+    .nav-pcpal__link {
+        background-color: white;
+    }
+
+    .nav-pcpal__link:hover {
+        background-color: #efefef;
+    }
+
+    .nav-list__item--menu-desplegable:hover .nav-pcpal__lista-anclas{
+        display: block;
+    }
+
+    .nav-list-link--especial {
+        background-color: #ff598d;
+        display: inline-block;
+        height: 85px;
+        padding: 1.2em 40px;
+        color: #FFF;
+
+        &:hover {
+            background-color: #fc3776;
+            color: #FFF;
+        }
+    }
+
+    .nav-pcpal__lista-anclas {
+        display: none;
+    }
+
+    .lista-redes-sociales {
+        margin-right: 157px;
+    }
+
+    .galeria {
+        height: 397px;
+    }
+
+    iframe {
+        width: 650px;
+        height: 380px;
+    }
+
+    .lista-redes-sociales {
+        justify-content: flex-end;
+        margin-right: 157px;
+    }
+
+    .lista-redes-sociales__link {
+        margin-left: 20px;
+    }
+}

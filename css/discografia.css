@@ -1,0 +1,116 @@
+h2 {
+    font-size: 2.6em;
+}
+
+.discos {
+    margin: 0px;
+}
+
+#discoDemonDays {
+    background: url("../img/franja_azul.jpg") left top repeat-x;
+}
+
+#discoGorillaz {
+    background: url("../img/franja_verde.jpg") left top repeat-x;
+}
+
+#discoPlasticBeatch {
+    background: url("../img/franja_roja.jpg") left top repeat-x;
+}
+
+#discoHumanz {
+    background: url("../img/franja_amarilla.jpg") left top repeat-x;
+}
+
+.disco {
+    padding: 1px;
+}
+.disco__portada {
+    margin: 50px auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.disco__info{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.disco__detalles {
+    display: flex;
+    justify-content: center;
+
+    & p:not(:first-child)::before{
+        content:"-";
+        margin: 0px 1rem;
+    }
+}
+
+.canciones {
+    width: 100%;
+}
+.canciones__titulo {
+    text-align: center;
+    border-bottom: 2px solid gray;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.canciones__nombre {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+@media screen and (min-width:1280px) {
+    .disco {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+    }
+
+    .disco--invertido {
+        flex-direction: row-reverse;
+    }
+
+    .disco__header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .disco--invertido .disco__header {
+        align-items: flex-end;
+    }
+
+    .disco__info {
+        width: 55%;
+    }
+
+    #discoDemonDays > article {
+        background-image: url("../img/personajes/2d.png"), url("../img/franja_azul.jpg");
+        background-position: 28% bottom, left top;
+        background-repeat: no-repeat, repeat-x;
+    }
+    
+    #discoGorillaz > article {
+        background-image: url("../img/personajes/murdoc_etapa_gorillaz.png"), url("../img/franja_verde.jpg");
+        background-position: 86% bottom, left top;
+        background-repeat: no-repeat, repeat-x;
+    }
+    
+    #discoPlasticBeatch > article {
+        background-image: url("../img/personajes/noodle_etapa_plastic_beatch.png"), url("../img/franja_roja.jpg");
+        background-position: 8% bottom, left top;
+        background-repeat: no-repeat, repeat-x;
+    }
+    
+    #discoHumanz > article {
+        background-image: url("../img/personajes/russel_fase_7.png"), url("../img/franja_amarilla.jpg");
+        background-position: 85% bottom, left top;
+        background-repeat: no-repeat, repeat-x;
+    }
+}
