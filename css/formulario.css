@@ -1,0 +1,151 @@
+h2 {
+    text-align: center;
+}
+
+.mini-link {
+    font-size: 0.7em;
+}
+
+.contenedor-formulario-pcpal {
+    background: #121210 url("../img/banda-con-fondo-negro.jpg") center top no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-formulario-pcpal p {
+    width: 80%;
+    text-align: center;
+}
+
+.contenedor-formulario {
+    height: 90%;
+    width: 90%;
+}
+
+.form {
+    margin: 0px;
+}
+
+.form__inspiraciones {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__terminos-y-condiciones {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.form__contenedor-check {
+    width: 50%;
+}
+
+.form__span {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+.form__input--grande {
+    height: 18.3em;
+    resize: none;
+    padding: 0.5em 1em;
+}
+
+.form__check {
+    margin-right: 0.5em;
+}
+.form__btn {
+    display: block;
+    padding: 0px 8em;
+    height: 2.8em;
+    margin: 2em auto;
+}
+
+.datos-del-concurso {
+    padding: 1em 2em;
+}
+
+.pregunta, .form__datos-personales, .form__idea {
+    width: 100%;
+}
+
+.pregunta {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.pregunta__titulo {
+    border-bottom: 2px solid #6d6d6d;
+    padding-bottom: 0.3em;
+    margin-top: 2em;
+}
+
+.pregunta__ol {
+    list-style: decimal inside;
+    text-align: left;
+}
+
+.pregunta__ol-li {
+    margin: 1em 0px;
+}
+@media screen and (min-width:800px) {
+    .contenedor-formulario-pcpal {
+        height: 1073px;
+    }
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form__idea {
+        width: 55%;
+    }
+
+    .form__datos-personales {
+        width: 35%;
+    }
+
+    .datos-del-concurso {
+        padding: 1em 5em;
+    }
+
+    .pregunta {
+        width: 80%;
+    }
+
+    .form__contenedor-check {
+        width: 33.333333333333333333%;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .datos-del-concurso {
+        padding: 1em 8em;
+    }
+
+    .pregunta {
+        width: 70%;
+    }
+
+    .form {
+        margin:  0px 3em;
+    }
+
+    .form__contenedor-check {
+        width: 25%;
+    }
+}

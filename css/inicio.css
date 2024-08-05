@@ -70,6 +70,10 @@ figure {
     line-height: 0px;
 }
 
+.personajes {
+    margin: 0px;
+}
+
 .fondo-azul {
     background-color: #00C6EC;
 }

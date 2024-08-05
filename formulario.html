@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gorillaz | Inicio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/formulario.css">
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery_cycle.js"></script>
@@ -49,7 +49,112 @@
       </nav>
     </header>
     <main class="main">
-		<form action="gracias.html" method="POST"></form>
+		<div class="contenedor-formulario-pcpal">
+      <div class="contenedor-formulario contenedor-txt contenedor-txt--transparente">
+        <h2>Forma parte del próximo disco de Gorillaz</h2>
+        <a class="mini-link" href="#datosConcurso">¿Qué es esto?</a>
+      <form class="form" action="gracias.html" method="POST" enctype="multipart/form-data">
+        <div class="form__datos-personales">
+          <div>
+            <span class="form__span">Nombre *</span>
+            <input class="form__input" type="text" name="nombre" autocomplete="off" autofocus required>
+          </div>
+          <div>
+            <span class="form__span">Apellido *</span>
+            <input class="form__input" type="text" name="apellido" autocomplete="off" required>
+          </div>
+          <div>
+            <span class="form__span">Email *</span>
+            <input placeholder="gorillaz@ejemplo.com" class="form__input" type="email" name="email" required>
+          </div>
+          <div>
+            <span class="form__span">Teléfono</span>
+            <input class="form__input" type="tel" name="telefono">
+          </div>
+        </div>
+        <div class="form__idea">
+          <div>
+            <span class="form__span">Detalles *</span>
+            <textarea class="form__input form__input--grande" name="detalles" placeholder="Contanos más acerca de tu idea! nombre del disco, historia, todo!!!" required></textarea>
+          </div>
+          <div>
+            <span class="form__span">Imagen de referencia</span>
+            <input type="file" name="referencia" accept="image/*">
+          </div>
+        </div>
+        <div class="form__inspiraciones">
+          <span class="form__span">¿Cuáles de los siguientes discos te gustaría que utilicemos a modo de referencia?</span>
+          <div class="form__contenedor-check">
+            <label for="gorillaz"><input id="gorillaz" class="form__check" type="checkbox" name="discos_favoritos[]" value="gorillaz">Gorillaz</label>
+          </div>
+          <div class="form__contenedor-check">
+            <label for="demonDays"><input id="demonDays" class="form__check" type="checkbox" name="discos_favoritos[]" value="demonDays">Demon Days</label>
+          </div>
+          <div class="form__contenedor-check">
+            <label for="plasticBeatch"><input id="plasticBeatch" class="form__check" type="checkbox" name="discos_favoritos[]" value="plasticBeatch">Plastic Beatch</label>
+          </div>
+          <div class="form__contenedor-check">
+            <label for="theFall"><input id="theFall" class="form__check" type="checkbox" name="discos_favoritos[]" value="theFall">The Fall</label>
+          </div>
+          <div class="form__contenedor-check">
+            <label for="humanz"><input id="humanz" class="form__check" type="checkbox" name="discos_favoritos[]" value="humanz">Humanz</label>
+          </div>
+          <div class="form__contenedor-check">
+            <label for="theNowNow"><input id="theNowNow" class="form__check" type="checkbox" name="discos_favoritos[]" value="theNowNow">The Now Now</label>
+          </div>
+          <div class="form__contenedor-check">
+            <label for="strangeTimez"><input id="strangeTimez" class="form__check" type="checkbox" name="discos_favoritos[]" value="strangeTimez">Strange Timez</label>
+          </div>
+          <div class="form__contenedor-check">
+            <label for="crackerIsland"><input id="crackerIsland" class="form__check" type="checkbox" name="discos_favoritos[]" value="crackerIsland">Cracker Island</label>
+          </div>
+        </div>
+        <div class="form__terminos-y-condiciones">
+          <label><input class="form__check" type="checkbox" name="terminos_y_condiciones" value="true" required>(OBLIGATORIO) Acepto los términos de condiciones y servicios</label>
+        </div>
+        <button class="form__btn">Enviar</button>
+      </form>
+      </div>
+    </div>
+
+		<section id="datosConcurso" class="datos-del-concurso contenedor-txt">
+      <h2>Concurso: ¡Comparte tu Idea para el Próximo Disco de Gorillaz!</h2>
+      <p>¿Eres fan de Gorillaz y siempre has soñado con aportar una idea para uno de nuestros discos? <em>¡Esta es tu oportunidad de hacerlo realidad!</em> A continuación te contamos los detalles...</p>
+
+			<div class="pregunta">
+        <h3 class="pregunta__titulo">¿De qué trata el concurso?</h3>
+        <p class="pregunta__p"><strong>Queremos escuchar tus ideas creativas para nuestro próximo disco</strong>. La idea ganadora tendrá la increíble oportunidad de ser parte del proceso creativo y ver su propuesta realizada en el próximo lanzamiento de Gorillaz.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3 class="pregunta__titulo">¿Quiénes pueden participar?</h3>
+        <p class="pregunta__p">¡Todos! <strong>No hay restricciones de edad o país</strong>. Si tienes una idea, queremos escucharla.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3 class="pregunta__titulo">¿Cómo puedes participar?</h3>
+        <p class="pregunta__p">Es muy sencillo:</p>
+        <ol class="pregunta__ol">
+          <li class="pregunta__ol-li"><span class="negrita">Formulario en la página web</span>: Rellena el formulario de la página web, donde podrás describir tu idea en detalle.</li>
+          <li class="pregunta__ol-li"><span class="negrita">Videos y redes sociales</span>: También puedes subir un video explicando tu idea en LAS redes sociales con el hashtag <span class="negrita">#GorillazNextAlbum</span>.</li>
+        </ol>
+      </div>
+
+      <div class="pregunta">
+        <h3 class="pregunta__titulo">Fecha límite para participar</h3>
+        <p class="pregunta__p"><strong>Tienes hasta el 30 de septiembre de 2024</strong> para enviar tu propuesta.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3 class="pregunta__titulo">Anuncio del ganador</h3>
+        <p class="pregunta__p"><strong>El ganador será contactado por correo electrónico</strong>. Una vez confirmado, anunciaremos al afortunado en nuestras redes sociales.</p>
+      </div>
+
+      <div class="pregunta">
+        <h3 class="pregunta__titulo">¡No hay criterios específicos!</h3>
+        <p class="pregunta__p"><strong>Queremos que tu creatividad fluya sin restricciones</strong>. No hay criterios específicos que debas seguir, <em>¡así que déjate llevar y sorpréndenos con tu mejor idea!</em></p>
+      </div>
+		</section>
     </main>
     <footer class="fondo-blanco">
       <a class="scroll-btn scroll-btn--subir centrado" title="Volver arriba del todo" href="#"><span>&uparrow;(Subir)</span></a>
