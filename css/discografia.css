@@ -28,9 +28,9 @@ h2 {
 .disco__portada {
     margin: 50px auto;
 
-    &:hover {
+    /* &:hover {
         cursor: pointer;
-    }
+    } */
 }
 
 .disco__info{

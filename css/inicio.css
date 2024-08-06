@@ -42,11 +42,11 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
 
-    &:hover {
+    /* &:hover {
         outline: 5px solid black;
         outline-offset: -4px;
         cursor: pointer;
-    }
+    } */
 }
 
 .personaje__img {
